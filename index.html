@@ -123,6 +123,14 @@
             border: 2px solid #6a0dad; /* Changed photo border to purple */
             border-radius: 5px; /* Made photo rectangle or square */
         }
+        ol.interests li::before {
+            content: counter(li) ". - ";
+            counter-increment: li;
+            font-weight: bold;
+        }
+        ol.interests {
+            counter-reset: li;
+        }
     </style>
 </head>
 <body>
@@ -146,7 +154,7 @@
                 <li>Girls Who Code 2020</li>
             </ul>
             <h3>Interests</h3>
-            <ol>
+            <ol class="interests">
                 <li>Asset/Financial Management: The next tab "SPT Memo" is a comprehensive memo about Sprout Social, a social media management company I most recently analyzed for my current internship at Edgewood Management LLC.</li>
                 <li>Personal Development: I am constantly on the hunt to develop socially. Psychology classes have always taught me the practice of patience and skill enhancement. In other words, there is always room for improvement. I love receiving feedback and improving.</li>
                 <li>Strategy and Product Innovation: I am highly interested in researching anything, especially products. As it ties to psychology, the idea of learning different strategies for growth (aka marketing/sales) is an activity I am highly keen to learn.</li>
