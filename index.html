@@ -115,6 +115,15 @@
         input[type="submit"]:active {
             box-shadow: 0 2px #666;
             transform: translateY(2px);
+
+        .tab:nth-child(5) {
+            background-color: #008080; /* Teal */
+    }
+
+        .tab:nth-child(5):hover {
+            opacity: 0.7;
+    }
+
         }
         .profile-pic {
             display: block;
@@ -135,6 +144,7 @@
         <div class="tab" onclick="showTab('Sprout Memo')">SPT Memo</div>
         <div class="tab" onclick="showTab('resume')">Resume</div>
         <div class="tab" onclick="showTab('linkedin')">LinkedIn</div>
+        <div class="tab" onclick="showTab('favorite')">Favorite Sections</div>
     </div>
     <div id="about" class="tab-content active about-me-box">
         <div class="content">
@@ -194,6 +204,19 @@
             </p>
         </div>
     </div>
+    <div id="favorite" class="tab-content">
+    <div class="content">
+        <h2>Favorite Sections</h2>
+        <ol>
+            <li>Asset/Financial Management</li>
+            <li>Personal Development</li>
+            <li>Strategy and Product Innovation</li>
+            <li>Various PyCharm projects</li>
+            <li>Summer programs at military academies</li>
+        </ol>
+        <p>These are some of my favorite sections from the About Me tab.</p>
+    </div>
+</div>
 
     <script>
         function showTab(tabId) {
