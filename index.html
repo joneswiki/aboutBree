@@ -129,6 +129,14 @@
             border: 2px solid #6a0dad; /* Changed photo border to purple */
             border-radius: 5px; /* Made photo rectangle or square */
         }
+        .favorite-question {
+            margin-bottom: 10px;
+        }
+        .favorite-question::after {
+            content: '○'; /* Unicode for empty circle */
+            display: block;
+            margin-left: 20px; /* Indent the circle */
+        }
     </style>
 </head>
 <body>
@@ -204,31 +212,31 @@
     <div id="favorite" class="tab-content">
         <div class="content">
             <h2>Favorite Questions</h2>
-            <p> I love learning more about people.</p>
+            <p>I love learning more about people.</p>
             <ol>
-                <li>Favorite Disney Princess/Prince? Why?</li>
-                <li>How would you describe your dream house/room?</li>
-                <li>Without thinking of money/mind or time, what would you major in & pursue as a career? Why? </li>
-                <li>What are you most proud of (can be an accomplishment/task completed or someone you taught?</li>
-                <li>Nurture vs Nature? Why? </li>
-                <li>What's your favorite piece of your outfit </li>
-                <li>Book recommendations?</li>
-                <li>How would your friends describe you?</li>
-                <li>Would your friends know what you're interested in?</li>
-                <li>What traits do you feel most drawn to?</li>
-                <li>What's your favorite place to be and why?</li>
-                <li>Morning bird or night owl? Why?</li>
-                <li>Celebrities you admire?</li>
-                <li>When at home without electricity and just a light source, what would you do?</li>
-                <li>Favorite season? Why?</li>
-                <li>Your personality type? Interpret it as best as you can.</li>
-                <li>Does your music represent who you are?</li>
-                <li>The president you'd most want to meet? Why?</li>
-                <li>Do you volunteer? What do you do? Where did this passion start?</li>
-                <li> Any interesting family figures? What did they do?</li>
-                <li>Any pets you have/want?</li>
-                <li>Dream life (example: city, suburban, rural, career, etc?</li>
-                <li>Favorite artists? Why?</li>
+                <li class="favorite-question">Favorite Disney Princess/Prince? Why?</li>
+                <li class="favorite-question">How would you describe your dream house/room?</li>
+                <li class="favorite-question">Without thinking of money/mind or time, what would you major in & pursue as a career? Why?</li>
+                <li class="favorite-question">What are you most proud of (can be an accomplishment/task completed or someone you taught?</li>
+                <li class="favorite-question">Nurture vs Nature? Why?</li>
+                <li class="favorite-question">What's your favorite piece of your outfit</li>
+                <li class="favorite-question">Book recommendations?</li>
+                <li class="favorite-question">How would your friends describe you?</li>
+                <li class="favorite-question">Would your friends know what you're interested in?</li>
+                <li class="favorite-question">What traits do you feel most drawn to?</li>
+                <li class="favorite-question">What's your favorite place to be and why?</li>
+                <li class="favorite-question">Morning bird or night owl? Why?</li>
+                <li class="favorite-question">Celebrities you admire?</li>
+                <li class="favorite-question">When at home without electricity and just a light source, what would you do?</li>
+                <li class="favorite-question">Favorite season? Why?</li>
+                <li class="favorite-question">Your personality type? Interpret it as best as you can.</li>
+                <li class="favorite-question">Does your music represent who you are?</li>
+                <li class="favorite-question">The president you'd most want to meet? Why?</li>
+                <li class="favorite-question">Do you volunteer? What do you do? Where did this passion start?</li>
+                <li class="favorite-question">Any interesting family figures? What did they do?</li>
+                <li class="favorite-question">Any pets you have/want?</li>
+                <li class="favorite-question">Dream life (example: city, suburban, rural, career, etc?</li>
+                <li class="favorite-question">Favorite artists? Why?</li>
             </ol>
             <p>These are some of my favorite questions to ask people given the opportunity.</p>
         </div>
