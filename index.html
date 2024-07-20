@@ -40,7 +40,13 @@
             background-color: #4b0082; /* Indigo */
         }
         .tab:nth-child(4) {
-            background-color: #2636A0; /* ue */
+            background-color: #2636A0; /* Blue */
+        }
+        .tab:nth-child(5) {
+            background-color: #16166B; /* Teal */
+        }
+        .tab:nth-child(6) {
+            background-color: #000000; /* Black */
         }
         .tab:hover {
             opacity: 0.7;
@@ -116,12 +122,6 @@
             box-shadow: 0 2px #666;
             transform: translateY(2px);
         }
-        .tab:nth-child(5) {
-            background-color: #16166B; /* Teal */
-        }
-        .tab:nth-child(5):hover {
-            opacity: 0.7;
-        }
         .profile-pic {
             display: block;
             margin-top: 10px;
@@ -141,6 +141,7 @@
         <div class="tab" onclick="showTab('resume')">Resume</div>
         <div class="tab" onclick="showTab('linkedin')">LinkedIn</div>
         <div class="tab" onclick="showTab('favorite')">Favorite Questions</div>
+        <div class="tab" onclick="showTab('storybook')">Storybook of Legends</div>
     </div>
     <div id="about" class="tab-content active about-me-box">
         <div class="content">
@@ -232,6 +233,13 @@
             <p>These are some of my favorite questions to ask people given the opportunity.</p>
         </div>
     </div>
+    <div id="storybook" class="tab-content">
+        <div class="content">
+            <h2>Storybook of Legends</h2>
+            <p>Welcome to the Storybook of Legends. Here you can find various tales and legends.</p>
+            <!-- Add your content here -->
+        </div>
+    </div>
 
     <script>
         function showTab(tabId) {
@@ -251,6 +259,13 @@
             if (tabId === 'favorite') {
                 const passkey = prompt('Please enter the passkey to access this tab:');
                 if (passkey !== 'sleepingBeauty') {
+                    alert('Incorrect passkey. Access denied.');
+                    return;
+                }
+            }
+            if (tabId === 'storybook') {
+                const passkey = prompt('Please enter the passkey to access this tab:');
+                if (passkey !== 'dearDiary') {
                     alert('Incorrect passkey. Access denied.');
                     return;
                 }
