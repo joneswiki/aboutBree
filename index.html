@@ -127,12 +127,11 @@
             border-radius: 5px; /* Made photo rectangle or square */
         }
         .favorite-question {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
-        .favorite-question::after {
-            content: '○ Random sentence for your answer.'; /* Unicode for empty circle with a random sentence */
-            display: block;
-            margin-left: 20px; /* Indent the circle */
+        .answer {
+            margin-left: 20px;
+            color: #444; /* Different color for answers */
         }
     </style>
 </head>
@@ -211,31 +210,78 @@
             <h2>Favorite Questions</h2>
             <p>I love learning more about people.</p>
             <ol>
-                <li class="favorite-question">Favorite Disney Princess/Prince? Why?</li>
-                <li>Elsa</li>
-                <li class="favorite-question">How would you describe your dream house/room?</li>
-                <li class="favorite-question">Without thinking of money/mind or time, what would you major in & pursue as a career? Why?</li>
-                <li class="favorite-question">What are you most proud of (can be an accomplishment/task completed or someone you taught?</li>
-                <li class="favorite-question">Nurture vs Nature? Why?</li>
-                <li class="favorite-question">What's your favorite piece of your outfit</li>
-                <li class="favorite-question">Book recommendations?</li>
-                <li class="favorite-question">How would your friends describe you?</li>
-                <li class="favorite-question">Would your friends know what you're interested in?</li>
-                <li class="favorite-question">What traits do you feel most drawn to?</li>
-                <li class="favorite-question">What's your favorite place to be and why?</li>
-                <li class="favorite-question">Morning bird or night owl? Why?</li>
-                <li class="favorite-question">Celebrities you admire?</li>
-                <li class="favorite-question">When at home without electricity and just a light source, what would you do?</li>
-                <li class="favorite-question">Favorite season? Why?</li>
-                <li class="favorite-question">Your personality type? Interpret it as best as you can.</li>
-                <li class="favorite-question">Does your music represent who you are?</li>
-                <li class="favorite-question">The president you'd most want to meet? Why?</li>
-                <li class="favorite-question">Do you volunteer? What do you do? Where did this passion start?</li>
-                <li class="favorite-question">Any interesting family figures? What did they do?</li>
-                <li class="favorite-question">Any pets you have/want?</li>
-                <li class="favorite-question">Dream life (example: city, suburban, rural, career, etc?</li>
-                <li class="favorite-question">Favorite artists? Why?</li>
-                <li class="favorite-question">Favorite Quotes/messages?</li>
+                <li class="favorite-question">Favorite Disney Princess/Prince? Why?
+                    <p class="answer">My favorite Disney princess is Elsa because she is independent and powerful.</p>
+                </li>
+                <li class="favorite-question">How would you describe your dream house/room?
+                    <p class="answer">My dream house would be a cozy cottage with a beautiful garden and a small library.</p>
+                </li>
+                <li class="favorite-question">Without thinking of money/mind or time, what would you major in & pursue as a career? Why?
+                    <p class="answer">I would major in marine biology and pursue a career in ocean conservation because I love the sea and marine life.</p>
+                </li>
+                <li class="favorite-question">What are you most proud of (can be an accomplishment/task completed or someone you taught?
+                    <p class="answer">I am most proud of completing a marathon and mentoring my younger cousin through high school.</p>
+                </li>
+                <li class="favorite-question">Nurture vs Nature? Why?
+                    <p class="answer">I believe both nature and nurture play crucial roles in shaping a person's character and abilities.</p>
+                </li>
+                <li class="favorite-question">What's your favorite piece of your outfit?
+                    <p class="answer">My favorite piece of clothing is my vintage leather jacket because it goes well with almost everything.</p>
+                </li>
+                <li class="favorite-question">Book recommendations?
+                    <p class="answer">I highly recommend reading "To Kill a Mockingbird" by Harper Lee and "1984" by George Orwell.</p>
+                </li>
+                <li class="favorite-question">How would your friends describe you?
+                    <p class="answer">My friends would describe me as loyal, creative, and always ready to help.</p>
+                </li>
+                <li class="favorite-question">Would your friends know what you're interested in?
+                    <p class="answer">Yes, my friends are aware of my interests in technology, books, and outdoor activities.</p>
+                </li>
+                <li class="favorite-question">What traits do you feel most drawn to?
+                    <p class="answer">I am most drawn to kindness, intelligence, and a good sense of humor.</p>
+                </li>
+                <li class="favorite-question">What's your favorite place to be and why?
+                    <p class="answer">My favorite place to be is the beach because it is calming and beautiful.</p>
+                </li>
+                <li class="favorite-question">Morning bird or night owl? Why?
+                    <p class="answer">I am a night owl because I find that I am most creative and productive at night.</p>
+                </li>
+                <li class="favorite-question">Celebrities you admire?
+                    <p class="answer">I admire Emma Watson for her activism and Leonardo DiCaprio for his work in environmental conservation.</p>
+                </li>
+                <li class="favorite-question">When at home without electricity and just a light source, what would you do?
+                    <p class="answer">I would read a book or write in my journal by candlelight.</p>
+                </li>
+                <li class="favorite-question">Favorite season? Why?
+                    <p class="answer">My favorite season is autumn because of the cool weather, beautiful colors, and cozy atmosphere.</p>
+                </li>
+                <li class="favorite-question">Your personality type? Interpret it as best as you can.
+                    <p class="answer">I am an INFJ, which means I am introspective, empathetic, and driven by strong values.</p>
+                </li>
+                <li class="favorite-question">Does your music represent who you are?
+                    <p class="answer">Yes, my music taste is diverse and reflects my eclectic personality.</p>
+                </li>
+                <li class="favorite-question">The president you'd most want to meet? Why?
+                    <p class="answer">I would like to meet Abraham Lincoln because of his leadership during a pivotal time in American history.</p>
+                </li>
+                <li class="favorite-question">Do you volunteer? What do you do? Where did this passion start?
+                    <p class="answer">I volunteer at a local animal shelter. My passion for helping animals started when I adopted my first pet.</p>
+                </li>
+                <li class="favorite-question">Any interesting family figures? What did they do?
+                    <p class="answer">My grandfather was a war veteran and an avid gardener who taught me the value of hard work and patience.</p>
+                </li>
+                <li class="favorite-question">Any pets you have/want?
+                    <p class="answer">I have a dog named Max, and I would love to adopt a cat in the future.</p>
+                </li>
+                <li class="favorite-question">Dream life (example: city, suburban, rural, career, etc?
+                    <p class="answer">My dream life would be living in a suburban area with a fulfilling career in technology and ample time for travel.</p>
+                </li>
+                <li class="favorite-question">Favorite artists? Why?
+                    <p class="answer">I love Van Gogh for his unique style and vibrant use of color, and Frida Kahlo for her powerful self-portraits.</p>
+                </li>
+                <li class="favorite-question">Favorite Quotes/messages?
+                    <p class="answer">"The only way to do great work is to love what you do." - Steve Jobs</p>
+                </li>
             </ol>
             <p>These are some of my favorite questions to ask people given the opportunity.</p>
         </div>
@@ -286,3 +332,4 @@
     </script>
 </body>
 </html>
+
