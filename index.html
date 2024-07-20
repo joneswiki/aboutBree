@@ -115,15 +115,12 @@
         input[type="submit"]:active {
             box-shadow: 0 2px #666;
             transform: translateY(2px);
-
+        }
         .tab:nth-child(5) {
             background-color: #008080; /* Teal */
-    }
-
+        }
         .tab:nth-child(5):hover {
             opacity: 0.7;
-    }
-
         }
         .profile-pic {
             display: block;
@@ -132,7 +129,6 @@
             border: 2px solid #6a0dad; /* Changed photo border to purple */
             border-radius: 5px; /* Made photo rectangle or square */
         }
-        
     </style>
 </head>
 <body>
@@ -205,35 +201,35 @@
         </div>
     </div>
     <div id="favorite" class="tab-content">
-    <div class="content">
-        <h2>Favorite Questions</h2>
-        <ol>
-            <li>Favorite Disney Princess/Prince? Why?</li>
-            <li>How would you describe your dream house/room?</li>
-            <li>Without thinking of money/mind or time, what would you major in & pursue as a career? Why? </li>
-            <li>What are you most proud of (can be an accomplishment/task completed or someone you taught?</li>
-            <li>Nurture vs Nature? Why? </li>
-            <li>What's your favorite piece of your outfit </li>
-            <li>Book recommendations?</li>
-            <li>How would your friends describe you?</li>
-            <li>Would your friends know what you're interested in?</li>
-            <li>What traits do you feel most drawn to?</li>
-            <li>What's your favorite place to be and why?</li>
-            <li>Morning bird or night owl? Why?</li>
-            <li>Celebrities you admire?</li>
-            <li>When at home without electricity and just a light source, what would you do?</li>
-            <li>Favorite season? Why?</li>
-            <li>Your personality type? Interpret it as best as you can.</li>
-            <li>Does your music represent who you are?</li>
-            <li>The president you'd most want to meet? Why?</li>
-            <li>Do you volunteer? What do you do? Where did this passion start?</li>
-            <li> Any interesting family figures? What did they do?</li>
-            <li>Any pets you have/want?</li>
-            <li>Dream life (example: city, suburban, rural, career, etc?</li>
-        </ol>
-        <p>These are some of my favorite questions to ask people given the opportunity?</p>
+        <div class="content">
+            <h2>Favorite Questions</h2>
+            <ol>
+                <li>Favorite Disney Princess/Prince? Why?</li>
+                <li>How would you describe your dream house/room?</li>
+                <li>Without thinking of money/mind or time, what would you major in & pursue as a career? Why? </li>
+                <li>What are you most proud of (can be an accomplishment/task completed or someone you taught?</li>
+                <li>Nurture vs Nature? Why? </li>
+                <li>What's your favorite piece of your outfit </li>
+                <li>Book recommendations?</li>
+                <li>How would your friends describe you?</li>
+                <li>Would your friends know what you're interested in?</li>
+                <li>What traits do you feel most drawn to?</li>
+                <li>What's your favorite place to be and why?</li>
+                <li>Morning bird or night owl? Why?</li>
+                <li>Celebrities you admire?</li>
+                <li>When at home without electricity and just a light source, what would you do?</li>
+                <li>Favorite season? Why?</li>
+                <li>Your personality type? Interpret it as best as you can.</li>
+                <li>Does your music represent who you are?</li>
+                <li>The president you'd most want to meet? Why?</li>
+                <li>Do you volunteer? What do you do? Where did this passion start?</li>
+                <li> Any interesting family figures? What did they do?</li>
+                <li>Any pets you have/want?</li>
+                <li>Dream life (example: city, suburban, rural, career, etc?</li>
+            </ol>
+            <p>These are some of my favorite questions to ask people given the opportunity?</p>
+        </div>
     </div>
-</div>
 
     <script>
         function showTab(tabId) {
@@ -250,6 +246,14 @@
             });
 
             // Show the selected tab content
+            if (tabId === 'favorite') {
+                const passkey = prompt('Please enter the passkey to access this tab:');
+                if (passkey !== 'sleepingBeauty') {
+                    alert('Incorrect passkey. Access denied.');
+                    return;
+                }
+            }
+
             document.getElementById(tabId).classList.add('active');
 
             // Add active class to the clicked tab
@@ -258,4 +262,3 @@
     </script>
 </body>
 </html>
-
