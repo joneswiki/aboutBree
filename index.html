@@ -136,7 +136,20 @@
             list-style-type: disc; /* Bullet point style for answers */
             font-weight: normal; /* Regular font weight for answers */
         }
+        .photos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .photos-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #4b0082; /* Border for images */
+            border-radius: 5px;
+        }
     </style>
+    <script src="https://apis.google.com/js/api.js"></script>
 </head>
 <body>
     <h2>Brianna Jones</h2>
@@ -219,10 +232,9 @@
                         <li>I'm way more like Belle because of her patience, empathy, and books.</li>
                         <li>My favorite prince is movie John Smith because he's a peacemaker and he accepts Pocahontas for who she is.</li>
                         <li>My 2nd favorite prince is Kristoff because he's protective, quiet, calm, and kind.</li>
-                        <li>My 3rd prince is Li Shang because Mulan listens to him purely out of respect</li>
+                        <li>My 3rd prince is Li Shang because Mulan listens to him purely out of respect.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Favorite random pieces of advice?
                     <ul class="answer">
                         <li>Never assume shit about anyone. You're usually wrong.</li>
@@ -232,25 +244,22 @@
                         <li>Expose yourself to different people.</li>
                         <li>Fear is a mindset, but it puts shit in perspective.</li>
                         <li>A good leader allows other people to be better. A great leader pushes others to do better, but in due time.</li>
-                        <li>Compliment as much as you criticize.
+                        <li>Compliment as much as you criticize.</li>
                         <li>If you have something to say, say it to their face. If not, you're just a bitch, and nobody respects a bitch.</li>
-                
                     </ul>
                 </li>
-                
                 <li class="favorite-question">How would your friends describe you?
                     <ul class="answer">
-                        <li>Responsible</li>
-                        <li>Fiercely Independent</li>
-                        <li>Quiet but Attentive</li>
-                        <li>A Hard Worker</li>
-                        <li>Probably a bit naive/innocent</li>
-                        <li>Spontaneous</li>
-                        <li>A "Mother"</li>
-                        <li>Brutally honest</li>
+                        <li>Responsible.</li>
+                        <li>Fiercely Independent.</li>
+                        <li>Quiet but Attentive.</li>
+                        <li>A Hard Worker.</li>
+                        <li>Probably a bit naive/innocent.</li>
+                        <li>Spontaneous.</li>
+                        <li>A "Mother."</li>
+                        <li>Brutally honest.</li>
                     </ul>
                 </li>
-
                 <li class="favorite-question">The rules you live by?
                     <ul class="answer">
                         <li>Don't waste someone else's money. Work for your own.</li>
@@ -261,49 +270,42 @@
                         <li>Give a genuine fuck about everyone.</li>
                         <li>Work as hard as you play.</li>
                     </ul>
-                </li> 
-                
+                </li>
                 <li class="favorite-question">What traits/people do you feel most drawn to?
                     <ul class="answer">
                         <li>Nerds / Introverts. People who can talk & listen for hours about a specific topic of interest.</li>
-                        <li>Kindness</li>
-                        <li>Emotional Intelligence</li>
-                        <li>Patience</li>
+                        <li>Kindness.</li>
+                        <li>Emotional Intelligence.</li>
+                        <li>Patience.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">The president you'd most want to meet? Why?
                     <ul class="answer">
-                        <li>Teddy Roosevelt</li>
-                        <li>His vibe seems immaculate</li>
-                        <li>Quiet confidence</li>
+                        <li>Teddy Roosevelt.</li>
+                        <li>His vibe seems immaculate.</li>
+                        <li>Quiet confidence.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Describe your dream house/room?
                     <ul class="answer">
                         <li>A Barbie dream house. Looks like an elevated cabin. The stairs turn into a slide. 6 rooms with 1 room being a study/library with a chestnut desk in the center and a large window with a patio.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">When was the last time you stepped out of your comfort zone?
                     <ul class="answer">
                         <li>Every day.</li>
                     </ul>
                 </li>
-                
-                <li class="favorite-question">What are you most proud of (can be an accomplishment/task completed or someone you taught?
+                <li class="favorite-question">What are you most proud of (can be an accomplishment/task completed or someone you taught)?
                     <ul class="answer">
-                        <li>Coast Guard A.I.M</li>
+                        <li>Coast Guard A.I.M.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Nurture vs Nature? Why?
                     <ul class="answer">
-                        <li>I believe both nurture plays crucial roles in shaping who a person is.</li>
+                        <li>I believe both nature and nurture play crucial roles in shaping who a person is.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">What's your favorite piece of your outfit?
                     <ul class="answer">
                         <li>Oddly enough, the colors of my cup tops say a lot about how my day will go.</li>
@@ -314,92 +316,81 @@
                         <li>Too many, but a must-read is Slaughterhouse 5.</li>
                     </ul>
                 </li>
-                
-                
+                <li class="favorite-question">Would your friends know who you're interested in?
+                    <ul class="answer">
+                        <li>No. They actively always get this wrong.</li>
+                    </ul>
+                </li>
                 <li class="favorite-question">What's your favorite place to be and why?
                     <ul class="answer">
                         <li>Home. It's where I feel safe.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Morning bird or night owl? Why?
                     <ul class="answer">
                         <li>Night owl. I likely associate night with quiet. I'm way more creative and productive at night in a safe place.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Favorite animals (can be mythical)?
                     <ul class="answer">
                         <li>Phoenix. Bats. Horses/Unicorns. Cats. Turtles.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Celebrity crush?
                     <ul class="answer">
                         <li>Nope.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">When at home without electricity and just a light source, what would you do?
                     <ul class="answer">
                         <li>Code or read.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Favorite season? Why?
                     <ul class="answer">
                         <li>Spring.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Your personality type? Interpret it as best as you can.
                     <ul class="answer">
                         <li>I am an INFJ, which means I am introspective, empathetic, and driven by strong moral values.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Does your music represent who you are?
                     <ul class="answer">
                         <li>In terms of versatility, yes. But it doesn't represent my mindset.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Do you volunteer? What do you do? Why?
                     <ul class="answer">
                         <li>Yes! Montrose.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Any interesting/admirable family figures? What did they do?
                     <ul class="answer">
                         <li>My grandfather was in the Army. His favorite quote was, "Be more seen than heard."</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Any pets you have/want?
                     <ul class="answer">
                         <li>My last cat was Ninja. I want more cats.</li>
                     </ul>
                 </li>
-                
-                <li class="favorite-question">Dream life (example: city, suburban, rural, career, etc?
+                <li class="favorite-question">Dream life (example: city, suburban, rural, career, etc)?
                     <ul class="answer">
                         <li>The suburban south as the owner of a product.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Favorite artists? Celebs you admire? Why?
                     <ul class="answer">
                         <li>Ice Spice because she's a woman in a male-dominated industry, but her confidence speaks volumes.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Without thinking of money/mind or means, what would you major in & pursue as a career? Why?
                     <ul class="answer">
-                        <li>Film at USC</li>
+                        <li>Film at USC.</li>
                     </ul>
                 </li>
-                
                 <li class="favorite-question">Favorite song lyrics/quotes/messages?
                     <ul class="answer">
                         <li>"They gon' hate me regardless. That's why I do what I do." - Yunggt3z</li>
@@ -414,7 +405,7 @@
         <div class="content">
             <h2>Storybook of Legends</h2>
             <p>Welcome to the Storybook of Legends. Named after Ever After High.</p>
-            <!-- Add your content here -->
+            <div id="photos" class="photos-container"></div>
         </div>
     </div>
 
@@ -453,6 +444,37 @@
             // Add active class to the clicked tab
             event.target.classList.add('active');
         }
+
+        function loadGooglePhotos() {
+            gapi.load('client:auth2', initClient);
+        }
+
+        function initClient() {
+            gapi.client.init({
+                apiKey: 'YOUR_API_KEY',
+                clientId: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+                discoveryDocs: ['https://photoslibrary.googleapis.com/$discovery/rest?version=v1'],
+                scope: 'https://www.googleapis.com/auth/photoslibrary.readonly'
+            }).then(function () {
+                gapi.auth2.getAuthInstance().signIn().then(loadPhotos);
+            });
+        }
+
+        function loadPhotos() {
+            gapi.client.photoslibrary.albums.get({
+                albumId: 'AF1QipOnQHJ6dgjEY5HocNECT7iVP4F6kJExHekiDk17'
+            }).then(function(response) {
+                const album = response.result;
+                const photosContainer = document.getElementById('photos');
+                album.mediaItems.forEach(item => {
+                    const img = document.createElement('img');
+                    img.src = item.baseUrl;
+                    photosContainer.appendChild(img);
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', loadGooglePhotos);
     </script>
 </body>
 </html>
