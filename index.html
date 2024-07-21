@@ -138,8 +138,8 @@
         }
         .photos-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column; /* Changed to column to show descriptions */
+            align-items: center;
             gap: 10px;
         }
         .photos-container img {
@@ -147,6 +147,10 @@
             height: auto;
             border: 2px solid #4b0082; /* Border for images */
             border-radius: 5px;
+        }
+        .photo-description {
+            text-align: center;
+            font-style: italic;
         }
     </style>
     <script src="https://apis.google.com/js/api.js"></script>
@@ -462,15 +466,20 @@
         }
 
         function loadPhotos() {
-            gapi.client.photoslibrary.albums.get({
+            gapi.client.photoslibrary.mediaItems.search({
                 albumId: 'AF1QipOnQHJ6dgjEY5HocNECT7iVP4F6kJExHekiDk17'
             }).then(function(response) {
-                const album = response.result;
+                const mediaItems = response.result.mediaItems;
                 const photosContainer = document.getElementById('photos');
-                album.mediaItems.forEach(item => {
+                mediaItems.forEach(item => {
                     const img = document.createElement('img');
                     img.src = item.baseUrl;
                     photosContainer.appendChild(img);
+
+                    const description = document.createElement('p');
+                    description.className = 'photo-description';
+                    description.textContent = item.description || 'No description available';
+                    photosContainer.appendChild(description);
                 });
             });
         }
