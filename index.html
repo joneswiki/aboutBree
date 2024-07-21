@@ -251,6 +251,7 @@
                         <li>Compliment as much as you criticize.</li>
                         <li>If you have something to say, say it to their face. If not, you're just a bitch, and nobody respects a bitch.</li>
                         <li>Make a budget, and stick to that shit.</li>
+                        <li>If you have to be the loudest in the room for people to listen, get out of the room.</li>
                     </ul>
                 </li>
                 <li class="favorite-question">How would your friends describe you?
@@ -358,7 +359,7 @@
                         <li>Spring.</li>
                     </ul>
                 </li>
-                <li class="favorite-question">Your personality type? Interpret it as best as you can.
+                <li class="favorite-question">Your personality type? Interpret as best as you can.
                     <ul class="answer">
                         <li>INFJ, which means I am introspective, empathetic, and driven by strong moral values.</li>
                     </ul>
@@ -399,12 +400,7 @@
                         <li>Film at USC.</li>
                     </ul>
                 </li>
-                <li class="favorite-question">Favorite song lyrics/quotes/messages?
-                    <ul class="answer">
-                        <li>"They gon' hate me regardless. That's why I do what I do." - Yunggt3z</li>
-                        <li>"If you have to be the loudest in the room for people to listen, get out of the room." - </li>
-                    </ul>
-                </li>
+
             </ol>
             <p>.</p>
         </div>
@@ -459,8 +455,8 @@
 
         function initClient() {
             gapi.client.init({
-                apiKey: 'YOUR_API_KEY',
-                clientId: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+                apiKey: 'AIzaSyDnk7QwdAEvAzI1Klj4lmIGiUPiP56BNA8',
+                clientId: '6781044912-g0tdu8c2bbfm8rhv3132jajuon3231aq.apps.googleusercontent.com',
                 discoveryDocs: ['https://photoslibrary.googleapis.com/$discovery/rest?version=v1'],
                 scope: 'https://www.googleapis.com/auth/photoslibrary.readonly'
             }).then(function () {
@@ -470,7 +466,8 @@
 
         function loadPhotos() {
             gapi.client.photoslibrary.mediaItems.search({
-                albumId: 'AF1QipOnQHJ6dgjEY5HocNECT7iVP4F6kJExHekiDk17'
+                albumId: 'ALBUM_ID',
+                pageSize: 50
             }).then(function(response) {
                 const mediaItems = response.result.mediaItems;
                 const photosContainer = document.getElementById('photos');
@@ -491,3 +488,4 @@
     </script>
 </body>
 </html>
+
